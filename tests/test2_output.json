@@ -1,0 +1,20 @@
+{
+    "http://www.matfiz.univ.kiev.ua/albums/3": {
+        "img": [
+            "http://www.matfiz.univ.kiev.ua/uploads/images/gallery/021.jpg",
+            "http://www.matfiz.univ.kiev.ua/uploads/images/gallery/022.jpg",
+            "http://www.matfiz.univ.kiev.ua/uploads/images/gallery/023.jpg"
+        ],
+        "h1": ["КАФЕДРА МАТЕМАТИЧНОЇ ФІЗИКИ"],
+        "error": false
+    },
+    "http://www.matfiz.univ.kiev.ua/albums/1": {
+        "img": [
+            "http://www.matfiz.univ.kiev.ua/uploads/images/gallery/001.jpg",
+            "http://www.matfiz.univ.kiev.ua/uploads/images/gallery/002.jpg",
+            "http://www.matfiz.univ.kiev.ua/uploads/images/gallery/003.jpg"
+        ],
+        "h1": ["КАФЕДРА МАТЕМАТИЧНОЇ ФІЗИКИ"],
+        "error": false
+    }
+}
