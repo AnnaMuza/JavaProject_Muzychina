@@ -1,0 +1,4 @@
+{
+    "urls": ["https://www.google.com/", "https://yandex.ru"],
+    "tags": ["h1", "p", "img", "a"]
+}

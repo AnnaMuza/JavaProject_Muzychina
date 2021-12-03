@@ -1,0 +1,47 @@
+{
+    "https://yandex.ru": {"error": "Connection refused: no further information"},
+    "https://www.google.com/": {
+        "p": [],
+        "a": [
+            "https://mail.google.com/mail/&ogbl",
+            "https://www.google.com.ua/imghp?hl=uk&ogbl",
+            "https://www.google.com.ua/intl/uk/about/products",
+            "https://accounts.google.com/ServiceLogin?hl=uk&passive=true&continue=https://www.google.com/&ec=GAZAmgQ",
+            "https://www.google.com/#",
+            "https://www.google.com/setprefs?sig=0_P-9jzCsTT34iQaIjubDJIFtK9x0%3D&hl=ru&source=homepage&sa=X&ved=0ahUKEwj7rbCszcb0AhUoxosKHRRJB7IQ2ZgBCA4",
+            "https://about.google/?utm_source=google-UA&utm_medium=referral&utm_campaign=hp-footer&fg=1",
+            "https://www.google.com/intl/uk_ua/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1",
+            "https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1",
+            "https://google.com/search/howsearchworks/?fg=1",
+            "https://policies.google.com/privacy?hl=uk&fg=1",
+            "https://policies.google.com/terms?hl=uk&fg=1",
+            "https://www.google.com/preferences?hl=uk&fg=1",
+            "https://www.google.com/advanced_search?hl=uk&fg=1",
+            "https://www.google.com/history/privacyadvisor/search/unauth?utm_source=googlemenu&fg=1",
+            "https://www.google.com/history/optout?hl=uk&fg=1",
+            "https://support.google.com/websearch/?p=ws_results_help&hl=uk&fg=1",
+            "Gmail",
+            "Зображення",
+            "Увійти",
+            "Повідомити про неприйнятні підказки",
+            "русский",
+            "Про Google",
+            "Реклама",
+            "Для бізнесу",
+            "Як працює Пошук",
+            "Конфіденційність",
+            "Умови",
+            "Налаштування пошуку",
+            "Розширений пошук",
+            "Ваші дані в Пошуку",
+            "Історія пошуку",
+            "Довідка щодо пошуку"
+        ],
+        "img": [
+            "https://www.google.com/logos/doodles/2021/seasonal-holidays-2021-6753651837109324-6752733080595603-cst.gif",
+            "https://www.google.com/tia/tia.png"
+        ],
+        "h1": [],
+        "error": false
+    }
+}
