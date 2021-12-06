@@ -11,6 +11,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.json.JSONArray;
@@ -51,12 +52,20 @@ public class WebBot {
             JSONArray arr = (JSONArray) jo.getJSONArray("urls");
             final int n = arr.length();
             String[] urls = new String[n];
+            URL url;
 
-            for (int i = 0; i < n; i++) urls[i] = arr.get(i).toString();
+            for (int i = 0; i < n; i++) {
+                try {
+                    url = new URL(arr.get(i).toString());
+                    urls[i] = url.toString();
+                } catch (MalformedURLException e) {
+                    urls[i] = find_site(arr.get(i).toString());
+                }
+            }
             return urls;
 
-        } catch (Exception e) {
-            e.getMessage();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
             return new String[1];
         }
     }
@@ -79,12 +88,12 @@ public class WebBot {
             return tags;
 
         } catch (Exception e) {
-            e.getMessage();
+            System.out.println(e.getMessage());
             return new String[1];
         }
     }
 
-    
+
     /** 
      * возвращает исходный код страницы
      * @param url
@@ -93,6 +102,28 @@ public class WebBot {
      */
     public static Document get_html(String url) throws IOException {
         return Jsoup.connect(url).get();
+    }
+
+    
+    /** 
+     * поиск сайта по ключевым словам
+     * @param keywords_
+     * @return String
+     */
+    public static String find_site(String keywords_) {
+        String keywords = keywords_.replaceAll("\\s+", "+");
+        try {
+            Document html = get_html("https://www.google.com/search?q=" + keywords);
+            Elements links = html.select("div.yuRUbf > a:first-child[href]");
+
+            return links.get(0).attr("href");
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("Cannot find site by keywords " + keywords_);
+            return keywords_;
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+            return keywords_;
+        }
     }
 
     
